@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stylish Music Player</title>
+</head>
+<body>
+
+    <div class="music-player">
+        <div class="player-controls">
+            <button id="prevBtn" class="control-button">&#9665;</button>
+            <button id="playPauseBtn" class="control-button">&#9658;</button>
+            <button id="nextBtn" class="control-button">&#9655;</button>
+        </div>
+        <div class="song-info">
+            <span id="songTitle" class="title-text">Now Playing: Custom Song</span>
+        </div>
+    </div>
+
+    <div class="playlist">
+        <h2 class="playlist-heading">Playlist</h2>
+        <ul id="songList"></ul>
+    </div>
+
+    <input type="text" id="songUrlInput" placeholder="Enter song URL">
+    <button id="addSongBtn" class="add-button">Add Song</button>
+    <audio id="audioPlayer" controls></audio>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
